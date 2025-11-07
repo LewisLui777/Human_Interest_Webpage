@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>401(k) Contributions</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Manage Your 401(k) Contributions</h1>
+        
+        <div class="card ytd-card">
+            <h2>Your Contributions</h2>
+            <p>Year-to-Date: <strong id="ytd-contributions">$0.00</strong></p>
+        </div>
+
+        <div class="card settings-card">
+            <h2>Contribution Settings</h2>
+            
+            <div class="form-group">
+                <label>Contribution Type:</label>
+                <div class="radio-group">
+                    <input type="radio" id="type-percent" name="contribution-type" value="percent">
+                    <label for="type-percent">Percentage (%)</label>
+                    <input type="radio" id="type-dollar" name="contribution-type" value="dollar">
+                    <label for="type-dollar">Dollar ($)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="contribution-slider">Contribution Rate:</label>
+                <div class="slider-container">
+                    <input type="range" id="contribution-slider" min="0" max="100" step="1">
+                    <input type="number" id="contribution-input" min="0" max="100" step="1">
+                    <span id="contribution-unit">%</span>
+                </div>
+            </div>
+
+            <button id="save-button" class="btn-primary">Save Changes</button>
+            <p id="save-status"></p> </div>
+
+        <div class="card impact-card">
+            <h2>Estimated Future Impact</h2>
+            <p>Based on your new contribution, by age 65, your *additional* savings could be:</p>
+            <h3 id="future-impact-amount">$0</h3>
+            <small>Disclaimer: This is a simple estimate assuming a 7% average annual return.</small>
+        </div>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
