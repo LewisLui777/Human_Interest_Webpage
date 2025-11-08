@@ -28,7 +28,7 @@ This project is a simple, single-page web application for managing 401(k) contri
 
 4.  **Run the application server:**
     ```bash
-    uvicorn app.main:app --reload
+    uvicorn app.main:app 
     ```
 
 5.  **Open the application:**
