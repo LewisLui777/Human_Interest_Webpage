@@ -7,7 +7,7 @@ This project is a simple, single-page web application for managing 401(k) contri
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/LewisLui777/Human_Interest_Webpage.git
-    cd my_401k_project
+    cd Human_Interest_Webpage
     ```
 
 2.  **Create and activate a Python virtual environment:**
